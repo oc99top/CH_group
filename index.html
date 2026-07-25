@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH国度 | 国家拟人同人创作站点</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", PingFang SC, sans-serif;
+        }
+        body {
+            background-color: #f7f8fa;
+            color: #222;
+            line-height: 1.7;
+        }
+        /* 导航栏 */
+        header {
+            background: #fff;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+        .nav-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: #165DFF;
+            letter-spacing: 2px;
+        }
+        .nav-links a {
+            margin-left: 28px;
+            text-decoration: none;
+            color: #444;
+            transition: 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #165DFF;
+        }
+        /* 主容器 */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 5%;
+        }
+        /* 首页横幅 */
+        .banner {
+            background: linear-gradient(135deg, #eef5ff, #f0f4fb);
+            border-radius: 16px;
+            padding: 60px 40px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .banner h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #111;
+        }
+        .banner p {
+            color: #555;
+            font-size: 16px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        /* 招募公告卡片（核心板块） */
+        .recruit-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 35px;
+            box-shadow: 0 4px 20px rgba(22, 93, 255, 0.08);
+            border-left: 5px solid #165DFF;
+            margin-bottom: 45px;
+        }
+        .recruit-card h2 {
+            color: #165DFF;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        .recruit-item {
+            margin: 14px 0;
+            color: #333;
+        }
+        .recruit-tip {
+            margin-top: 22px;
+            padding: 12px;
+            background: #f5f9ff;
+            border-radius: 8px;
+            color: #2054b3;
+        }
+        /* 内容分区 */
+        .section-title {
+            font-size: 22px;
+            margin: 50px 0 25px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e4e7ed;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 24px;
+        }
+        .content-box {
+            background: #fff;
+            padding: 28px;
+            border-radius: 12px;
+            transition: all 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .content-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.09);
+        }
+        .content-box h3 {
+            margin-bottom: 10px;
+            color: #222;
+        }
+        .content-box p {
+            color: #666;
+            font-size: 14px;
+        }
+        /* 页脚 */
+        footer {
+            margin-top: 80px;
+            padding: 30px 0;
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header>
+        <div class="nav-wrap">
+            <div class="logo">CH国度</div>
+            <div class="nav-links">
+                <a href="#home">首页</a>
+                <a href="#works">同人作品</a>
+                <a href="#news">圈内资讯</a>
+                <a href="#recruit">管理员招募</a>
+                <a href="#about">关于本站</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 首页开篇 -->
+        <section class="banner" id="home">
+            <h1>CH国家拟人 原创同人创作站点</h1>
+            <p>汇集图文、短篇小说、插画、设定解析等CH圈原创同人内容，尊重历史、理性创作，打造温和友好的国家拟人创作交流空间</p>
+        </section>
+
+        <!-- 管理员招募区域 -->
+        <section class="recruit-card" id="recruit">
+            <h2>📢 站点管理员 火热招募中</h2>
+            <div class="recruit-item">
+                <strong>招募名额：</strong>1名 CH圈专职管理员
+            </div>
+            <div class="recruit-item">
+                <strong>任职要求：</strong>
+                <ul style="padding-left: 22px;margin-top:8px;">
+                    <li>深度了解CH国家拟人圈子，熟知圈内创作规范、避雷准则</li>
+                    <li>时间充裕，日常可在线打理站点事务，有耐心、脾气温和</li>
+                    <li>熟悉同人内容审核，能够甄别违规引战、过激、歪曲历史类稿件</li>
+                    <li>尊重历史底线，拒绝偏激二创、恶意拟人创作，三观端正</li>
+                    <li>有社群管理、同人平台运营经验者优先</li>
+                    <li>有创意、善于带动活动</li>
+                </ul>
+            </div>
+            <div class="recruit-item">
+                <strong>日常工作内容：</strong>
+                <ul style="padding-left: 22px;margin-top:8px;">
+                    <li>审核投稿同人图文、文稿内容，把控内容质量与底线</li>
+                    <li>维护站内评论区氛围，调解圈内小矛盾，杜绝引战吵架</li>
+                    <li>整理优秀同人作品，定期更新站点内容分区</li>
+                    <li>收集创作者建议，优化站点使用体验</li>
+                </ul>
+            </div>
+            <div class="recruit-tip">
+                应聘方式：可通过站点留言/私信站长投递个人简介+圈内经历，审核通过后即可上任
+            </div>
+        </section>
+
+        <!-- 同人内容板块 -->
+        <h2 class="section-title" id="works">同人创作分区</h2>
+        <div class="content-grid">
+            <div class="content-box">
+                <h3>插画图集</h3>
+                <p>CH手绘、板绘原创人物插画、场景画作收录</p>
+            </div>
+            <div class="content-box">
+                <h3>短篇文学</h3>
+                <p>日常向、剧情向原创同人小说、随笔短文</p>
+            </div>
+            <div class="content-box">
+                <h3>设定考据</h3>
+                <p>角色设定科普、历史背景结合解析</p>
+            </div>
+            <div class="content-box">
+                <h3>投稿通道</h3>
+                <p>创作者可提交原创作品至本站展示</p>
+            </div>
+        </div>
+
+        <!-- 关于本站 -->
+        <h2 class="section-title" id="about">关于站点</h2>
+        <div class="content-box" style="margin-top:15px;">
+            <p>本站是非营利个人向CH同人分享站点，仅供爱好者友好交流创作；所有二创均基于艺术拟人，严肃历史不容篡改，坚决抵制歪曲历史、恶意抹黑国家形象的内容。站点初创阶段人手不足，急需同好管理员一同运营维护~</p>
+        </div>
+    </main>
+
+    <!-- 底部版权 -->
+    <footer>
+        © 2026 CH国度同人站点 | 非盈利爱好者自建平台 | 理性创作，尊重历史
+    </footer>
+</body>
+</html>
